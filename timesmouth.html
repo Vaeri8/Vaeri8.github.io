@@ -1,0 +1,132 @@
+<!--
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Luong Tuan Kiet
+  ID: s3980288
+  Acknowledgement: book images are downloaded on https://bookshop.org/ and google; icon images are downloaded on https://www.flaticon.com/;
+-->
+
+<!DOCTYPE html>
+<html>
+<title>Time's Mouth</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="bookstore_files\bookicon.png">
+
+<body>
+
+    <!--Navigation bar with logo and navigation dropdown-->
+    <nav>
+        <div id="logo" href="index.html"><img src="bookstore_files\bookicon.png" width="6%"> Variate Bookstore</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">New Releases</a></li>
+                <li><a href="index.html">Best Sellers</a></li>
+
+                <li>
+                    <!-- Catalog Drop Down -->
+                    <label for="drop-2" class="toggle">Catalog</label>
+                    <a href="index.html">Catalog</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        
+                        <li>
+                          <!-- Catalog Fiction Drop Down -->        
+                          <label for="drop-3" class="toggle">Fiction</label>
+                          <a href="fiction.html">Fiction</a>         
+                          <input type="checkbox" id="drop-3"/>
+                          <ul>
+                              <li><a href="fiction.html">Romance</a></li>
+                              <li><a href="fiction.html">Science Fiction</a></li>
+                              <li><a href="fiction.html">Manga</a></li>
+                          </ul>
+                          </li>
+
+                          <li>
+                            <!-- Catalog Nonfiction Drop Down -->        
+                            <label for="drop-4" class="toggle">Nonfiction</label>
+                            <a href="nonfiction.html">Nonfiction</a>         
+                            <input type="checkbox" id="drop-4"/>
+                            <ul>
+                                <li><a href="nonfiction.html">Biography & Memoir</a></li>
+                                <li><a href="nonfiction.html">Philosophy</a></li>
+                                <li><a href="nonfiction.html">Spirituality & Religion</a></li>
+                            </ul>
+                            </li>
+
+                            <li>
+                              <!-- Catalog Textbooks Drop Down -->        
+                              <label for="drop-5" class="toggle">Textbooks</label>
+                              <a href="textbooks.html">Textbooks</a>         
+                              <input type="checkbox" id="drop-5"/>
+                              <ul>
+                                  <li><a href="textbooks.html">Math & Science</a></li>
+                                  <li><a href="textbooks.html">Professional and Technical</a></li>
+                                  <li><a href="textbooks.html">Social Science</a></li>
+                              </ul>
+                              </li>
+
+                    </ul>
+                    </li>
+                <li><a href="index.html">Shopping Cart</a></li>
+                <li>
+                    <!-- Account Drop Down -->
+                    <label for="drop-1" class="toggle">Account</label>
+                    <a href="index.html">Account</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="index.html">Log In</a></li>
+                        <li><a href="contact.html">Customer Support</a></li>   
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+
+    <main>
+        <center>
+            <!--Breadcrumb and Title-->
+            <section>
+                <h3><a href="index.html">Home</a> > <a href="fiction.html">Fiction</a> > <a href="fiction.html">Science Fiction</a> > Time's Mouth</h3>
+                <h1>Time's Mouth</h1>
+            </section>
+            <br>
+            <div class="bookdetail">
+
+                <img class="mainimg" src="bookstore_files\scifi2.webp">
+                <div class="flex-container">
+                    <div><img src="bookstore_files\scifi2.webp"></div>
+                    <div><img src="bookstore_files\scifi2.webp"></div>
+                    <div><img src="bookstore_files\scifi2.webp"></div>
+                </div>
+
+                <div class="pricebuy">
+                    <h3>19.99$</h3>
+                    <input type="submit" value="Purchase">
+                </div>
+
+            </div>
+            <h2>Description</h2>
+            <div class="description">
+            <p>Ursa possesses a very special gift. She can travel through memory and revisit her past. After she flees her hometown for the counterculture glory of 1950's California, the intoxicating potential of her unique ability eventually draws a group of women into her orbit and into a ramshackle Victorian mansion in the woods outside Santa Cruz. Yet Ursa's powers come with a cost. Soon this cultish community of sisterhood takes an ominous turn, prompting her son, Ray, and his pregnant lover, Cherry, to flee their home for Los Angeles and reinvent themselves far from Ursa's insidious influence. But escaping their past won't be so easy. A series of mysterious events forces Cherry to abandon their baby, leaving Ray to raise Opal alone. 
+            </p>
+            </div>
+    </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="index.html">Terms</a>
+                <a href="index.html">Copyright</a>
+                <a href="contact.html">Contact Us</a>
+            </ul>
+        </footer>
+    </center>
+
+</html>

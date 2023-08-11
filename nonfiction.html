@@ -1,0 +1,176 @@
+<!--
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Luong Tuan Kiet
+  ID: s3980288
+  Acknowledgement: book images are downloaded on https://bookshop.org/ and google; icon images are downloaded on https://www.flaticon.com/;
+-->
+
+<!DOCTYPE html>
+<html>
+    <title>Nonfiction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="bookstore_files\bookicon.png">
+<body>
+
+    <!--Navigation bar with logo and navigation dropdown-->
+    <nav>
+        <div id="logo" href="index.html"><img src="bookstore_files\bookicon.png" width="6%"> Variate Bookstore</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">New Releases</a></li>
+                <li><a href="index.html">Best Sellers</a></li>
+
+                <li>
+                    <!-- Catalog Drop Down -->
+                    <label for="drop-2" class="toggle">Catalog</label>
+                    <a href="index.html">Catalog</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        
+                        <li>
+                          <!-- Catalog Fiction Drop Down -->        
+                          <label for="drop-3" class="toggle">Fiction</label>
+                          <a href="fiction.html">Fiction</a>         
+                          <input type="checkbox" id="drop-3"/>
+                          <ul>
+                              <li><a href="fiction.html">Romance</a></li>
+                              <li><a href="fiction.html">Science Fiction</a></li>
+                              <li><a href="fiction.html">Manga</a></li>
+                          </ul>
+                          </li>
+
+                          <li>
+                            <!-- Catalog Nonfiction Drop Down -->        
+                            <label for="drop-4" class="toggle">Nonfiction</label>
+                            <a href="nonfiction.html">Nonfiction</a>         
+                            <input type="checkbox" id="drop-4"/>
+                            <ul>
+                                <li><a href="nonfiction.html">Biography & Memoir</a></li>
+                                <li><a href="nonfiction.html">Philosophy</a></li>
+                                <li><a href="nonfiction.html">Spirituality & Religion</a></li>
+                            </ul>
+                            </li>
+
+                            <li>
+                              <!-- Catalog Textbooks Drop Down -->        
+                              <label for="drop-5" class="toggle">Textbooks</label>
+                              <a href="textbooks.html">Textbooks</a>         
+                              <input type="checkbox" id="drop-5"/>
+                              <ul>
+                                  <li><a href="textbooks.html">Math & Science</a></li>
+                                  <li><a href="textbooks.html">Professional and Technical</a></li>
+                                  <li><a href="textbooks.html">Social Science</a></li>
+                              </ul>
+                              </li>
+
+                    </ul>
+                    </li>
+                <li><a href="index.html">Shopping Cart</a></li>
+                <li>
+                    <!-- Account Drop Down -->
+                    <label for="drop-1" class="toggle">Account</label>
+                    <a href="index.html">Account</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="index.html">Log In</a></li>
+                        <li><a href="contact.html">Customer Support</a></li>   
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+          
+        <center>
+        
+            <main>
+                <!-- New Releases Section -->
+                <section>
+                <h1>~ Nonfiction ~</h1>
+                <br>
+                <h2><a href="#">Biography</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="oppenheimer.html"><img src="bookstore_files\bio1.webp" alt="Oppenheimer"></a>
+                                <a class="name_price" href="#"> Oppenheimer </a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="stevejobs.html"><img src="bookstore_files\bio2.webp" alt="Steve Jobs"></a>
+                                <a class="name_price" href="#"> Steve Jobs</a>
+                                    <span>19.99$</span>        
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="alanturing.html"><img src="bookstore_files\bio3.jpg" alt="Alan Turing"></a>
+                                <a class="name_price" href="#"> Alan Turing: The Enigma</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+
+                    <h2><a href="#">Philosophy</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="#"><img src="bookstore_files\philosophy1.webp" alt="How to say no"></a>
+                                <a class="name_price" href="#">How to say No</a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="howtosayno.html"><img src="bookstore_files\philosophy2.jpg" alt="Art of War"></a>
+                                <a class="name_price" href="#">Art of War</a>
+                                    <span>19.99$</span> 
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="nolongerhuman.html"><img src="bookstore_files\philosophy3.jpg" alt="No longer human"></a>
+                                <a class="name_price" href="#"> No Longer Human</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+
+                    <h2><a href="saythequietpart.html">Spirituality</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="#"><img src="bookstore_files\spirituality1.webp" alt="Say the quiet part out loud"></a>
+                                <a class="name_price" href="#"> Say the Quiet Part Out Loud</a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="reversemeditation.html"><img src="bookstore_files\spirituality2.webp" alt="Reverse Meditation"></a>
+                                <a class="name_price" href="#"> Reverse Meditation</a>
+                                    <span>19.99$</span>        
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="happiness.html"><img src="bookstore_files\spirituality3.webp" alt="Happiness"></a>
+                                <a class="name_price" href="#"> Happiness</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+                
+                    </section>
+                  </main>
+        </center>
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="index.html">Terms</a>
+                <a href="index.html">Copyright</a>
+                <a href="contact.html">Contact Us</a>
+            </ul>
+        </footer>
+</html>

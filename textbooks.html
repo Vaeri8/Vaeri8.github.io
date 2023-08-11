@@ -1,0 +1,176 @@
+<!--
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Luong Tuan Kiet
+  ID: s3980288
+  Acknowledgement: book images are downloaded on https://bookshop.org/ and google; icon images are downloaded on https://www.flaticon.com/;
+-->
+
+<!DOCTYPE html>
+<html>
+    <title>Textbooks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="bookstore_files\bookicon.png">
+<body>
+
+    <!--Navigation bar with logo and navigation dropdown-->
+    <nav>
+        <div id="logo" href="index.html"><img src="bookstore_files\bookicon.png" width="6%"> Variate Bookstore</div>
+
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">New Releases</a></li>
+                <li><a href="index.html">Best Sellers</a></li>
+
+                <li>
+                    <!-- Catalog Drop Down -->
+                    <label for="drop-2" class="toggle">Catalog</label>
+                    <a href="index.html">Catalog</a>
+                    <input type="checkbox" id="drop-2"/>
+                    <ul>
+                        
+                        <li>
+                          <!-- Catalog Fiction Drop Down -->        
+                          <label for="drop-3" class="toggle">Fiction</label>
+                          <a href="fiction.html">Fiction</a>         
+                          <input type="checkbox" id="drop-3"/>
+                          <ul>
+                              <li><a href="fiction.html">Romance</a></li>
+                              <li><a href="fiction.html">Science Fiction</a></li>
+                              <li><a href="fiction.html">Manga</a></li>
+                          </ul>
+                          </li>
+
+                          <li>
+                            <!-- Catalog Nonfiction Drop Down -->        
+                            <label for="drop-4" class="toggle">Nonfiction</label>
+                            <a href="nonfiction.html">Nonfiction</a>         
+                            <input type="checkbox" id="drop-4"/>
+                            <ul>
+                                <li><a href="nonfiction.html">Biography & Memoir</a></li>
+                                <li><a href="nonfiction.html">Philosophy</a></li>
+                                <li><a href="nonfiction.html">Spirituality & Religion</a></li>
+                            </ul>
+                            </li>
+
+                            <li>
+                              <!-- Catalog Textbooks Drop Down -->        
+                              <label for="drop-5" class="toggle">Textbooks</label>
+                              <a href="textbooks.html">Textbooks</a>         
+                              <input type="checkbox" id="drop-5"/>
+                              <ul>
+                                  <li><a href="textbooks.html">Math & Science</a></li>
+                                  <li><a href="textbooks.html">Professional and Technical</a></li>
+                                  <li><a href="textbooks.html">Social Science</a></li>
+                              </ul>
+                              </li>
+
+                    </ul>
+                    </li>
+                <li><a href="index.html">Shopping Cart</a></li>
+                <li>
+                    <!-- Account Drop Down -->
+                    <label for="drop-1" class="toggle">Account</label>
+                    <a href="index.html">Account</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="index.html">Log In</a></li>
+                        <li><a href="contact.html">Customer Support</a></li>   
+                    </ul> 
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+          
+        <center>
+        
+            <main>
+                <!-- New Releases Section -->
+                <section>
+                <h1>~ Textbooks ~</h1>
+                <br>
+                <h2><a href="#">Math</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="mathwithoutnumbers.html"><img src="bookstore_files\math1.jpg" alt="Math without numbers"></a>
+                                <a class="name_price" href="#"> Math without Numbers</a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="textbooks.html"><img src="bookstore_files\math2.jpg" alt="Fermat's last theorem"></a>
+                                <a class="name_price" href="#"> Fermat's last theorem</a>
+                                    <span>19.99$</span>        
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="textbooks.html"><img src="bookstore_files\math3.jpg" alt="A mind for numbers"></a>
+                                <a class="name_price" href="#"> A Mind for Numbers</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+
+                    <h2><a href="#">Proffessional and Technical</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="textbooks.html"><img src="bookstore_files\proftech1.jpg" alt="The way you say it"></a>
+                                <a class="name_price" href="#">The way you say it</a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="textbooks.html"><img src="bookstore_files\proftech2.webp" alt="The first 90 days"></a>
+                                <a class="name_price" href="#">The First 90 Days</a>
+                                    <span>19.99$</span>        
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="whywesleep.html"><img src="bookstore_files\proftech3.webp" alt="Why we sleep"></a>
+                                <a class="name_price" href="#">Why we sleep</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+
+                    <h2><a href="#">Social Science</a></h2>
+                    <div class="bookcontainer">
+                            <div class="bookimg">
+                                <a href="abroadinjapan.html"><img src="bookstore_files\socsci1.jpg" alt="Abroad in Japan"></a>
+                                <a class="name_price" href="#"> Abroad in Japan</a>
+                                    <span>19.99$</span>             
+                                </div>
+
+                            <div class="bookimg">
+                                <a href="textbooks.html"><img src="bookstore_files\socsci2.webp" alt="The confidence game"></a>
+                                <a class="name_price" href="#"> The Confidence Game</a>
+                                    <span>19.99$</span>        
+                                </div>
+                                    
+                            <div class="bookimg">
+                                <a href="tippingpoint.html"><img src="bookstore_files\socsci3.webp" alt="The Tipping point"></a>
+                                <a class="name_price" href="#"> The Tipping Point</a>
+                                    <span>19.99$</span>
+                                </div>
+                                    
+                    </div>
+                
+                    </section>
+                  </main>
+        </center>
+        <!-- Footer -->
+        <footer>
+            <ul>
+                <a href="index.html">About Us</a>
+                <a href="index.html">Privacy Policy</a>
+                <a href="index.html">Terms</a>
+                <a href="index.html">Copyright</a>
+                <a href="contact.html">Contact Us</a>
+            </ul>
+        </footer>
+</html>

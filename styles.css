@@ -1,0 +1,521 @@
+/*
+RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Luong Tuan Kiet
+  ID: s3980388
+  Acknowledgement: import fonts from google.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+html {
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+main {
+	margin-top: 1%;
+}
+
+section {
+	position: relative;
+	top: 55px;
+}
+
+footer {
+	position: relative;
+	top: 50px;
+	bottom: 0;
+	background-color: #254441;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+footer ul {
+	float: center;
+	padding: 1%;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+footer a {
+	padding: 1%;
+	color: #FFF;
+}
+
+body {
+	background: #F8EDE3;
+	font-size: 22px;
+	line-height: 32px;
+	color: #798777;
+	margin: auto;
+	padding: 0;
+	word-wrap: break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+
+iframe {
+	margin: 1%;
+}
+
+/* Image Gallery */
+div.scroll-container {
+	background-color: #333;
+	overflow: auto;
+	overflow-y: scroll;
+	white-space: nowrap;
+	padding: 10px;
+}
+
+div.scroll-container img {
+	padding: 10px;
+	border-radius: 20px;
+	width: 10%;
+}
+
+.scroll-container a img {
+	width: 190px;
+	height: 300px;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: center;
+	color: #333;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #333;
+}
+
+h3 a {
+	color: #333;
+}
+
+a {
+	color: #798777;
+	text-decoration: none;
+}
+
+h1 {
+	margin-top: 100px;
+	text-align: center;
+	font-size: 60px;
+	line-height: 70px;
+	font-family: 'Bree Serif', 'serif';
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+
+p {
+	text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+	display: none;
+}
+
+/* Contact form */
+* {
+	box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+/* Double using this purchase since we dont need the purchase button to be functional */
+input[type=submit] {
+	background-color: #254441;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=reset] {
+	background-color: #254441;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #A2B29F;
+}
+
+input[type=reset]:hover {
+	background-color: #A2B29F;
+}
+
+.signupcontainer {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+.bookcontainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 60%;
+}
+
+.bookimg {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookimg img {
+	height: 500px;
+	width: 300px;
+}
+
+.bookbuy {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bookdetail {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 650px;
+	height: 500px;
+}
+
+.mainimg {
+	height: 500px;
+	width: 300px;
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100px;
+}
+
+.flex-container>div {
+	width: 100px;
+	text-align: center;
+}
+
+.flex-container img {
+	
+	width: 100%;
+	height: 150px;
+}
+
+.pricebuy {
+	width: 150px;
+}
+
+.description {
+	width: 80%;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+	margin: auto;
+	padding: 0;
+	top: 0;
+	background-color: #254441;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+#logo {
+	display: block;
+	padding: 0 20px;
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+#logo img {
+	padding-top: 5px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+	float: right;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #254441;
+}
+
+/* Styling the links */
+nav a {
+	display: block;
+	padding: 14px 20px;
+	color: #FFF;
+	font-size: 17px;
+	text-decoration: none;
+}
+
+
+nav ul li ul li:hover {
+	background: #333;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+	background-color: #333;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+	display: none;
+	position: absolute;
+	/* has to be the same number as the "line-height" of "nav a" */
+	top: 60px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover>ul {
+	display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+	position: relative;
+	top: -60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */
+	left: 170px;
+}
+
+
+/* Dropdown symbol */
+li>a:after {
+	content: ' ▸';
+}
+
+li>a:only-child:after {
+	content: '';
+}
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+
+	.bookcontainer {
+		display: flex;
+		flex-direction: column;
+		/* Changing from column to row on mobile*/
+	}
+
+	section {
+		position: relative;
+		top: 120px;
+	}
+
+
+	iframe {
+		width: 80%;
+	}
+
+	footer {
+		position: relative;
+		top: 120px;
+	}
+
+	#logo {
+		display: block;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	nav {
+		margin: 0;
+		max-height: calc(100%-50%);
+		overflow: auto;
+		position: absolute;
+	}
+
+	/* Hide the navigation menu by default */
+	.toggle+a,
+	.menu {
+		display: none;
+	}
+
+	/* Stylinf the toggle lable */
+	.toggle {
+		display: block;
+		background-color: #254441;
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
+		text-decoration: none;
+		border: none;
+	}
+
+	.toggle:hover {
+		background-color: #333;
+	}
+
+	/* Display Dropdown when clicked on Parent Lable */
+	[id^=drop]:checked+ul {
+		display: block;
+	}
+
+	/* Change menu item's width to 100% */
+	nav ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul .toggle,
+	nav ul ul a {
+		padding: 0 40px;
+	}
+
+	nav ul ul ul a {
+		padding: 0 80px;
+
+	}
+
+	nav a:hover,
+	nav ul ul ul a {
+		background-color: #333;
+	}
+
+	nav ul li ul li .toggle,
+	nav ul ul a,
+	nav ul ul ul a {
+		padding: 14px 20px;
+		color: #FFF;
+		font-size: 17px;
+	}
+
+
+	nav ul li ul li .toggle,
+	nav ul ul a {
+		background-color: #798777;
+	}
+
+	/* Hide Dropdowns by Default */
+	nav ul ul {
+		float: none;
+		position: static;
+		color: #ffffff;
+		/* has to be the same number as the "line-height" of "nav a" */
+	}
+
+	/* Hide menus on hover */
+	nav ul ul li:hover>ul,
+	nav ul li:hover>ul {
+		display: none;
+	}
+
+	/* Fisrt Tier Dropdown */
+	nav ul ul li {
+		display: block;
+		width: 100%;
+	}
+
+	nav ul ul ul li {
+		position: static;
+		overflow: auto;
+		/* has to be the same number as the "width" of "nav ul ul li" */
+
+	}
+
+	.scroll-container a img {
+		height: 200px;
+		width: 140px;
+
+	}
+
+}
+
+@media all and (max-width : 330px) {
+
+	nav ul li {
+		display: block;
+		width: 94%;
+	}
+
+	.scroll-container a img {
+		height: 200px;
+		width: 135px;
+
+	}
+}
